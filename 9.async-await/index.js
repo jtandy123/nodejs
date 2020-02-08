@@ -16,12 +16,17 @@ console.log(
 */
 
 var result = (async function() {
-  var content = await new Promise(resolve => {
-    setTimeout(() => {
-      resolve(3)
-    }, 500)
-  })
-  console.log(content)
+  try {
+    var content = await new Promise((resolve, reject) => {
+      setTimeout(() => {
+        // resolve(3)
+        reject(new Error('8'))
+      }, 500)
+    })
+  } catch (e) {
+    console.log('error', e.message)
+  }
+  console.log(content) // undefined
   return 4
 })()
 

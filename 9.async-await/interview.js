@@ -1,10 +1,11 @@
 ;(async function() {
   try {
-    await interview(1)
-    await interview(2)
-    await interview(3)
+    // await interview(1)
+    // await interview(2)
+    // await interview(3)
+    await Promise.all([interview(1), interview(2)])
   } catch (err) {
-    return console.log('cry at ' + err.round + 'round')
+    return console.log('cry at ' + err.round + ' round')
   }
   console.log('smile')
 })()
