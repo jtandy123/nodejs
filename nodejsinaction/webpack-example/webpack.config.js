@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-
+/*
 module.exports = {
   mode: 'none',
   entry: './app/index.jsx',
@@ -20,5 +20,15 @@ module.exports = {
       }],
       exclude: /node_modules/
     }]
+  }
+};
+*/
+
+module.exports = {
+  mode: 'none',
+  entry: './app/index.js',
+  output: {
+    path: __dirname,
+    filename: 'dist/test_bundle.js'
   }
 };
