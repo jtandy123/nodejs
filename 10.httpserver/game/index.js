@@ -67,18 +67,20 @@ app.get('/game',
     const playerAction = response.playerAction;
     const gameResult = game(playerAction);
 
-    // response.writeHead(200);
-    response.status(200);
+    setTimeout(function() {
+      // response.writeHead(200);
+      response.status(200);
 
-    if (gameResult === 0) {
-      // response.end('平局！');
-      response.send('平局！');
-    } else if (gameResult === 1) {
-      response.send('你赢了！');
-      response.playWon = true;
-    } else {
-      response.send('你输了！');
-    }
+      if (gameResult === 0) {
+        // response.end('平局！');
+        response.send('平局！');
+      } else if (gameResult === 1) {
+        response.send('你赢了！');
+        response.playWon = true;
+      } else {
+        response.send('你输了！');
+      }
+    }, 500);
 });
 
 app.get('/', function(request, response) {
