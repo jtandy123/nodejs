@@ -1,0 +1,52 @@
+Arguments: 
+  /Users/tao.jiang/.nvm/versions/node/v10.14.1/bin/node /usr/local/Cellar/yarn/1.19.1/libexec/bin/yarn.js add nodemon@1.19.4 -D
+
+PATH: 
+  /Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/bin:/Users/tao.jiang/.pyenv/shims:/Users/tao.jiang/.pyenv/shims:/Users/tao.jiang/.nvm/versions/node/v10.14.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/bin:/Users/tao.jiang/.pyenv/shims:/Users/tao.jiang/Library/Tomcat/apache-tomcat-9.0.27/bin:/Users/tao.jiang/Library/Maven/apache-maven-3.5.0/bin:.:/Users/tao.jiang/Library/Tomcat/apache-tomcat-9.0.27/bin:/Users/tao.jiang/Library/Maven/apache-maven-3.5.0/bin:.
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  10.14.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: http://npm.envisioncn.com:7001/undefsafe/download/undefsafe-2.0.3.tgz: Request failed "404 Not Found"
+      at ResponseError.ExtendableBuiltin (/usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:696:66)
+      at new ResponseError (/usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:802:124)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:66996:16)
+      at Request.emit (events.js:182:13)
+      at Request.module.exports.Request.onRequestResponse (/usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:141441:10)
+      at ClientRequest.emit (events.js:187:15)
+      at HTTPParser.parserOnIncomingClient (_http_client.js:555:21)
+      at HTTPParser.parserOnHeadersComplete (_http_common.js:109:17)
+      at Socket.socketOnData (_http_client.js:441:20)
+      at Socket.emit (events.js:182:13)
+
+npm manifest: 
+  {
+    "name": "geek",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "koa": "^2.11.0",
+      "koa-mount": "^4.0.0",
+      "koa-static": "^5.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
