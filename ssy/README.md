@@ -3,6 +3,7 @@ Node.js本质是单线程的
 
 node可以作为前后端的中间层，进行路由和转发  
 
+知识点：
 - node包管理工具：npm, yarn  
 - node版本管理：nvm
 - node事件与回调机制
@@ -30,5 +31,5 @@ node可以作为前后端的中间层，进行路由和转发
 - node web服务器详解
 - node中的WebSocket
 - WebSocket数据传输
-- socket.io：node长连接处理
+- SocketIO：node长连接处理
 - web框架：express & koa2
