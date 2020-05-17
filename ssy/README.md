@@ -33,3 +33,22 @@ node可以作为前后端的中间层，进行路由和转发
 - WebSocket数据传输
 - SocketIO：node长连接处理
 - web框架：express & koa2
+---   
+
+nvm常用命令：
+```
+$ command -v nvm
+$ nvm ls
+$ nvm ls-remote
+$ nvm install xxx
+$ nvm use xxx
+```
+---
+- 依靠事件循环机制对请求进行处理
+- 异步和回调
+- 处理客户请求的主线程是单线程
+---
+常用网络模块：
+- http: 创建服务器和客户端
+- url
+- querystring
