@@ -51,4 +51,26 @@ $ nvm use xxx
 常用网络模块：
 - http: 创建服务器和客户端
 - url
-- querystring
+- querystring   
+---
+url模块
+- parse(urlStr)
+- format(urlObj)
+- resolve(...args)
+
+querystring模块
+- parse(queryStr)
+- stringify(obj)
+
+util模块
+- inspect(obj, options)
+
+path模块
+- join(...args)
+- extname(pathStr)
+- parse(pathStr)
+
+dns模块
+- resolve(domain, callback(err, addressArray))
+- reverse(ipStr, callback(err, domainStr))   
+---
