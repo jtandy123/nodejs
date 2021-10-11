@@ -30,11 +30,13 @@ fs.readdir(filesDir, (err, files) => {
   }
 
   function launcher() {
-    while(running < limit && tasks.length > 0) {
-      const task = tasks.shift();
-      task();
+    while(tasks.length > 0) {
+      if (running < limit) {
+        const task = tasks.shift();
+        task();
+      }
     }
-  }
+  } 
 
   files.forEach(file => {
     const task = (file => {

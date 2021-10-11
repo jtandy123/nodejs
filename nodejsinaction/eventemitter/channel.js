@@ -5,7 +5,7 @@ channel.clients = {};
 channel.subscriptions = {};
 
 channel.on('join', function(id, client) {
-  console.log(this); // {}，this指向module.exports
+  console.log(this); // this指向channel
   const welcome = `
   Welcome!
   Guests online: ${this.listeners('broadcast').length}
